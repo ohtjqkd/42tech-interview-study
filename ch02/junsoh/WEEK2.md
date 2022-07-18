@@ -55,8 +55,12 @@ DevOps를 실현하기 위한 여러가지 방법론들이 개발됐고 그 중 
     - 테스트: 완성된 프로그램을 테스트하는 단계(통합 인수 시스템 테스트 등)
 
 <img width="45%" style="display: inline;" src="https://www.seguetech.com/wp-content/uploads/2013/07/segue-blog-waterfall-vs-agile-which-is-right-development-methodology-for-your-project.png">
+
+-출처: https://www.seguetech.com/waterfall-vs-agile-methodology/  
+
 <img width="45%" src="https://bldrdigital.com/wp-content/uploads/2020/10/xWaterfall-methodology-Vs-Agile-methodology.jpeg.pagespeed.ic.Xem1r9K4gs.webp">
 
+-출처: https://bldrdigital.com/cloud/ci-cd-intro/attachment/waterfall-methodology-vs-agile-methodology/
 
 ## CI/CD
 
@@ -64,14 +68,33 @@ DevOps를 실현하기 위한 여러가지 방법론들이 개발됐고 그 중 
 
 ### CI (Continuous Integration: 지속적 통합)
 
-빌드/테스트 자동화 과정
-애플리케이션에 대한 새로운 코드 변경 사항이 정기적으로 빌드 및 테스트되어 공유 리포지토리에 통합되므로 여러 명의 개발자가 동시에 애플리케이션 개발과 관련된 코드 작업을 할 경우 서로 충돌할 수 있는 문제를 해결할 수 있다.
+    빌드/테스트 자동화 과정
+    애플리케이션에 대한 새로운 코드 변경 사항이 정기적으로 빌드 및 테스트되어 공유 리포지토리에 통합되므로 여러 명의 개발자가 동시에 애플리케이션 개발과 관련된 코드 작업을 할 경우 서로 충돌할 수 있는 문제를 해결할 수 있다.
 
-지속적 통합은 소스/버전 관리 시스템에 대한 변경 사항을 정기적으로 커밋하여 모든 사람에게 동일 작업 기반을 제공하는 것으로 시작합니다.
+    지속적 통합은 소스/버전 관리 시스템에 대한 변경 사항을 정기적으로 커밋하여 모든 사람에게 동일 작업 기반을 제공하는 것으로 시작합니다.
 
-__커밋할 때마다 빌드와 일련의 자동 테스트가 이루어져 동작을 확인하고 변경으로 인해 문제가 생기는 부분이 없도록 보장합니다.
+    커밋할 때마다 빌드와 일련의 자동 테스트가 이루어져 동작을 확인하고 변경으로 인해 문제가 생기는 부분이 없도록 보장합니다.
 
-### CD (Continuous Delivery: 지속적 제공(?) / Continuous Deploy: 지속적 배포)
+### CD (Continuous Delivery: 지속적 제공(?) / Continuous Deployment: 지속적 배포)
 
-빌드, 테스트 및 배포
+    빌드, 테스트 및 배포
+    성공적으로 병합된 내역을 저장소뿐만 아니라 사용자가 사용할 수 있는 배포 단계까지 릴리즈하는 것을 의미함
+    - Deployment
+        CI 단계를 마치고 릴리즈가 가능하다면 배포까지 자동으로 이루어질 때
+    - Delivery
+        배포단계에서 사람의 검증을 통해 수동으로 이루어진다면 Delivery라고 함
+
 ![CI/CD Flow](https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/ci-cd-flow-desktop_edited_0.png?itok=TzgJwj6p)
+
+-출처: redhat
+
+- CI/CD 툴 종류
+    - Jenkins: java기반의 오픈소스 플랫폼으로 다양한 OS에서 사용가능하며 가장 정보가 많음
+    - Bamboo: Atlassian에서 개발한 유료 플랫폼
+    - CircleCI: 부분 유료, 가장 인기있다고 함
+    - TeamCity: 개인 무료
+
+### DevOps 엔지니어
+DevOps 구조를 바꾸는 일을 구현하는 역할
+개발과 운영 전반에 걸친 스킬 뿐만 아니라 사일로화된 팀간의 분열을 연결하는 대인 관계 스킬을 갖춰야함.
+더 자세한 내용은 https://www.atlassian.com/ko/devops/what-is-devops/devops-engineer
